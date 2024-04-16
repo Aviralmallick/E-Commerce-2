@@ -1,11 +1,12 @@
 import { doc, getDoc } from "firebase/firestore";
-import { useSignInWithEmailAndPassword } from "react-firebase-Hooks/auth"
+import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth"
 import { useNavigate } from "react-router";
 import { auth, firestore } from "../Firebase/Firebase";
 
 const useLogin = () => {
     const [signInWithEmailAndPassword, loading, error] = useSignInWithEmailAndPassword(auth);
     const navigate = useNavigate();
+    //dcdcdcdc
 
     const login = async (inputs) => {
         if (!inputs.email || !inputs.password) {
